@@ -1,6 +1,7 @@
 import os
 import textwrap
 import time
+from services import sListar
 
 def menuListar():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -27,11 +28,11 @@ def menuListar():
 
         match opcion:
             case 1:
-                pass
+                sListar.vTodo()
             case 2:
-                pass
+                sListar.filtrarCat()
             case 3:
-                pass
+                sListar.filtrarRango()
             case 4:
                 return
             case _:

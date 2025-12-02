@@ -1,6 +1,7 @@
 import os
 import textwrap
 import time
+from services import sRegistrar
 
 def menuRegistrar():
     while True:
@@ -11,8 +12,10 @@ def menuRegistrar():
             =============================================
             1. Comida
             2. Transporte
-            3. Crear nueva categoria
-            4. Volver al menu principal
+            3. Entretenimiento
+            4. Otros/Sin Categoria
+            5. Crear nueva categoria
+            6. Volver al menu principal
             =============================================
             """
 
@@ -27,12 +30,16 @@ def menuRegistrar():
 
         match opcion:
             case 1:
-                pass
+                sRegistrar.comida()
             case 2:
-                pass
+                sRegistrar.transporte()
             case 3:
-                pass
+                sRegistrar.entretenimiento()
             case 4:
+                sRegistrar.otros()
+            case 5:
+                sRegistrar.crear()
+            case 6:
                 return
             case _:
                 print("Por favor elige una opción valida...")

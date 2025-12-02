@@ -1,30 +1,25 @@
 import os
-import time
 import textwrap
-from modules.registrar import menuRegistrar
-from modules.listar import menuListar
-from modules.total import menuTotal
-from modules.reporte import menuReporte
+import time
 
-def main():
+def menuRegistrar():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         menu = """
             =============================================
-                    Simulador de Gasto Diario
+                        Registrar Nuevo Gasto
             =============================================
-            1. Registrar nuevo gasto
-            2. Listar gastos
-            3. Calcular total de gastos
-            4. Generar reporte de gastos
-            5. Salir
+            1. Comida
+            2. Transporte
+            3. Crear nueva categoria
+            4. Volver al menu principal
             =============================================
             """
 
         print(textwrap.dedent(menu))
 
         try:
-            opcion = int(input("Elige una opcion: "))
+            opcion = int(input("Seleccione el tipo de gasto: "))
         except(ValueError, KeyboardInterrupt) as sixth:
             print(f"ERROR: {sixth}. Ingresa un caracter valido...")
             input("Presione 'Enter' para continuar...")
@@ -32,22 +27,14 @@ def main():
 
         match opcion:
             case 1:
-                menuRegistrar()
+                pass
             case 2:
-                menuListar()
+                pass
             case 3:
-                menuTotal()
+                pass
             case 4:
-                menuReporte()
-            case 5:
-                break
+                return
             case _:
                 print("Por favor elige una opción valida...")
                 time.sleep(1)
                 continue
-
-if __name__ == "__main__":
-    main()
-
-
-

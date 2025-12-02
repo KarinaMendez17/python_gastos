@@ -2,19 +2,11 @@ import os
 import textwrap
 import time
 import json
+from services import utilities
 
-def comida():
-    with open("data/gastos.json", "r") as am:
-        gastos = json.load(am)
+def registrarGasto(datos):
+    monto = float(input("Ingresa el monto a registrar: "))
 
-def transporte():
-    pass
-
-def entretenimiento():
-    pass
-
-def otros():
-    pass
 
 def crear():
-    pass
+    utilities.cargar()

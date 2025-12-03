@@ -30,13 +30,13 @@ def menuRegistrar():
 
         match opcion:
             case 1:
-                sRegistrar.comida()
+                sRegistrar.registrarCategoria("Comida")
             case 2:
-                sRegistrar.transporte()
+                sRegistrar.registrarCategoria("Transporte")
             case 3:
-                sRegistrar.entretenimiento()
+                sRegistrar.registrarCategoria("Entretenimiento")
             case 4:
-                sRegistrar.otros()
+                sRegistrar.registrarCategoria("Otros")
             case 5:
                 sRegistrar.crear()
             case 6:

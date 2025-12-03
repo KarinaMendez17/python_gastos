@@ -1,3 +1,28 @@
 {
-    "gastos": []
+    "gastos": [
+        {
+            "categoria": "Comida",
+            "monto": 10000.0,
+            "descripcion": "hamburguesa",
+            "fecha": "2025-12-02"
+        },
+        {
+            "categoria": "Transporte",
+            "monto": 2500.0,
+            "descripcion": "taxi",
+            "fecha": "2025-12-02"
+        },
+        {
+            "categoria": "Entretenimiento",
+            "monto": 10000.0,
+            "descripcion": "cine",
+            "fecha": "2025-12-02"
+        },
+        {
+            "categoria": "Educación",
+            "monto": 200000.0,
+            "descripcion": "sin descripción",
+            "fecha": "2025-12-02"
+        }
+    ]
 }

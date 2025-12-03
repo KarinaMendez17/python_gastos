@@ -1,7 +1,8 @@
 import json
 import os
 
-RUTA = "data/gastos.json"
+RUTA = os.path.join(os.path.dirname(__file__), "..", "data", "gastos.json")
+RUTA = os.path.abspath(RUTA)
 
 def cargar():
     if not os.path.exists(RUTA):

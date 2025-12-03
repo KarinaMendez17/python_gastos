@@ -1,7 +1,7 @@
 import os
 import textwrap
 import time
-
+from services import sTotal
 def menuTotal():
     os.system('cls' if os.name == 'nt' else 'clear')
     while True:
@@ -27,11 +27,11 @@ def menuTotal():
 
         match opcion:
             case 1:
-                pass
+                sTotal.totalDiario()
             case 2:
-                pass
+                sTotal.totalSemanal()
             case 3:
-                pass
+                sTotal.totalMensual()
             case 4:
                 return
             case _:

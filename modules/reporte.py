@@ -1,6 +1,7 @@
 import os
 import textwrap
 import time
+from services import sReporte
 
 def menuReporte():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -28,11 +29,11 @@ def menuReporte():
 
         match opcion:
             case 1:
-                pass
+                sReporte.totalDiario()
             case 2:
-                pass
+                sReporte.totalSemanal()
             case 3:
-                pass
+                sReporte.totalMensual()
             case 4:
                 return
             case _:

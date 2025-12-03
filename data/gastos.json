@@ -23,6 +23,18 @@
             "monto": 200000.0,
             "descripcion": "sin descripción",
             "fecha": "2025-12-02"
+        },
+        {
+            "categoria": "Otros",
+            "monto": 1000.0,
+            "descripcion": "sin descripción",
+            "fecha": "2025-12-02"
+        },
+        {
+            "categoria": "Comida",
+            "monto": 20000.0,
+            "descripcion": "sushi",
+            "fecha": "2025-12-02"
         }
     ]
 }

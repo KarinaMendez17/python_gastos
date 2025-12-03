@@ -78,7 +78,7 @@ python_gastos/
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/KarinaMendez17/python_gastos.git>
 ```
 2. Enter the project folder:
 ```
